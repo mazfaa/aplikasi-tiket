@@ -15,7 +15,7 @@ Route::get('ticket-check', [CustomerTicketCheckController::class, 'index']);
 Route::post('ticket-check', [CustomerTicketCheckController::class, 'store'])->name('ticket-check');
 
 // Route::middleware('auth')->group(function () {
-	Route::get('admin', [AdminController::class, 'index'])->name('admin')->middleware('auth');
+	Route::get('admin', [AdminController::class, 'index']);
 	Route::get('admin/edit/{id}', [AdminController::class, 'edit']);
 	Route::put('admin/{id}', [AdminController::class, 'update']);
 	Route::delete('admin/{id}', [AdminController::class, 'destroy']);
@@ -26,10 +26,10 @@ Route::post('ticket-check', [CustomerTicketCheckController::class, 'store'])->na
 	Route::post('logout', LogoutController::class)->name('logout');
 // });
 
-Route::middleware('guest')->group(function () {
+// Route::middleware('guest')->group(function () {
 	Route::get('login', [LoginController::class, 'index']);
 	Route::post('login', [LoginController::class, 'store'])->name('login');
-});
+// });
 
 Route::get('report', ReportController::class)->name('report');
-Route::get('report/export/', [ReportController::class, 'export'])->name('report');
+Route::get('report/export/', [ReportController::class, 'export']);
