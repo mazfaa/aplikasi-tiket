@@ -15,7 +15,7 @@ Route::get('ticket-check', [CustomerTicketCheckController::class, 'index']);
 Route::post('ticket-check', [CustomerTicketCheckController::class, 'store'])->name('ticket-check');
 
 // Route::middleware('auth')->group(function () {
-	Route::get('admin', [AdminController::class, 'index']);
+	Route::get('admin', [AdminController::class, 'index'])->name('admin')->middleware('auth');
 	Route::get('admin/edit/{id}', [AdminController::class, 'edit']);
 	Route::put('admin/{id}', [AdminController::class, 'update']);
 	Route::delete('admin/{id}', [AdminController::class, 'destroy']);

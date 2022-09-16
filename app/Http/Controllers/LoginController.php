@@ -14,14 +14,17 @@ class LoginController extends Controller
     }
 
     public function store(Request $request) {
-        $attributes = $request->validate([
-            'username' => 'required',
-            'password' => 'required',
+        $credentials = $request->validate([
+            'username' => ['required'],
+            'password' => ['required'],
         ]);
 
-        if (Auth::attempt($attributes)) {
-            return redirect('admin');
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('admin');
         }
+
+        return back()->withErrors(['username' => 'The provided credentials do not match our records.']);
         // $request->validate([
         //     'username' => ['required'],
         //     'password' => ['required'],

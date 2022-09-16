@@ -24,8 +24,8 @@
           <th scope="col">Alamat</th>
           <th scope="col">Seat</th>
           <th scope="col">Gate</th>
-          <th scope="col">watching</th>
-          <th scope="col">No. Telephone</th>
+          <th scope="col">Watching</th>
+          <th scope="col">Phone</th>
           <th scope="col">Tanggal Masuk</th>
           <th scope="col">Waktu Masuk</th>
           <th scope="col">Pengaturan</th>
