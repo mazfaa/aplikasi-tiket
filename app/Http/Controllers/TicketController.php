@@ -25,7 +25,6 @@ class TicketController extends Controller
     public function create()
     {
         $ticket = Ticket::orderBy('id', 'desc')->first();
-        // dd($tickets);
         return view('ticket', compact('ticket'));
     }
 

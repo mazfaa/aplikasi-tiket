@@ -23,6 +23,9 @@ class AdminController extends Controller
             'phone' => $request->phone,
             'date' => $request->date,
             'time' => $request->time,
+            'seat' => $request->seat,
+            'gate' => $request->gate,
+            'watching' => $request->watching,
         ]);
         return redirect('admin')->with('success', 'Ticket Updated Successfully!');
     }

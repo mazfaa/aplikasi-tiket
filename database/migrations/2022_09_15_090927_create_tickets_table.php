@@ -19,6 +19,9 @@ return new class extends Migration
             $table->text('address');
             $table->string('phone');
             $table->enum('status', ['unchecked', 'checked']);
+            $table->integer('seat');
+            $table->integer('gate');
+            $table->string('watching');
             $table->date('date');
             $table->time('time');
             $table->timestamps();

@@ -20,7 +20,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::create([
             'username' => 'admin',
             'password' => Hash::make('password'),
-            // 'password' => 123,
         ]);
 
         \App\Models\Ticket::create(
@@ -30,6 +29,9 @@ class DatabaseSeeder extends Seeder
                 'address' => 'Cianjur',
                 'phone' => '+6281313810593',
                 'status' => 'checked',
+                'seat' => 17,
+                'gate' => 05,
+                'watching' => 'Naruto',
                 'date' => date('Y-m-d'),
                 'time' => date("s:i:h"),    
             ],

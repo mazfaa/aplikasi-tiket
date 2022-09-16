@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>Admin Dashboard </title>
+    <title>Admin Dashboard | Agen X </title>
 
     <!-- Bootstrap -->
     <link href="/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,6 +32,29 @@
     <link href="/assets/build/css/custom.min.css" rel="stylesheet">
     <!-- DataTable -->
     <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
   </head>
 
   <body class="nav-md">
@@ -40,7 +63,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="/admin" class="site_title"><i class="bi bi-credit-card-2-front"></i> &nbsp; <span>Agen X</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -48,7 +71,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="/assets/images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="/assets/images/user.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -64,9 +87,9 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="/admin"><i class="bi bi-send-fill"></i> Pemesan</a></li>
-                  <li><a href="/check"><i class="bi bi-shield-fill-check"></i> Check-in</a></li>
-                  <li><a href="/report"><i class="bi bi-card-checklist"></i> Laporan</a></li>
+                  <li><a href="/admin"><i class="bi bi-send-fill"></i> &nbsp; Pemesanan</a></li>
+                  <li><a href="/check"><i class="bi bi-shield-fill-check"></i> &nbsp; Check-in</a></li>
+                  <li><a href="/report"><i class="bi bi-card-checklist"></i> &nbsp; Laporan</a></li>
                 </ul>
               </div>
               <div class="menu_section">
@@ -88,19 +111,13 @@
               <ul class=" navbar-right">
                 <li class="nav-item dropdown open" style="padding-left: 15px;">
                   <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="/assets/images/img.jpg" alt="">Admin
+                    <img src="/assets/images/user.jpg" alt="">Admin
                   </a>
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="javascript:;"> Profile</a>
-                      <a class="dropdown-item"  href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
-                      </a>
-                  <a class="dropdown-item"  href="javascript:;">Help</a>
                     <a class="dropdown-item"  href="login.html">
                       <form action="{{ route('logout') }}" method="post">
                         @csrf
-                        <button type="submit" class="dropdown-item">Log Out</button>
+                        <button type="submit" class="dropdown-item">Log Out <i class="bi bi-box-arrow-in-right"></i></button>
                       </form>
                     </a>
                   </div>

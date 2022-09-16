@@ -22,9 +22,12 @@
           <th scope="col">#</th>
           <th scope="col">Nama</th>
           <th scope="col">Alamat</th>
+          <th scope="col">Seat</th>
+          <th scope="col">Gate</th>
+          <th scope="col">watching</th>
           <th scope="col">No. Telephone</th>
-          <th scope="col">Tanggal</th>
-          <th scope="col">Waktu</th>
+          <th scope="col">Tanggal Masuk</th>
+          <th scope="col">Waktu Masuk</th>
           <th scope="col">Pengaturan</th>
         </tr>
       </thead>
@@ -34,6 +37,9 @@
               <th scope="row">{{ $ticket->id }}</th>
               <td>{{ $ticket->name }}</td>
               <td>{{ $ticket->address }}</td>
+              <td>{{ $ticket->seat }}</td>
+              <td>{{ $ticket->gate }}</td>
+              <td>{{ $ticket->watching }}</td>
               <td>{{ $ticket->phone }}</td>
               <td>{{ $ticket->date }}</td>
               <td>{{ $ticket->time }}</td>
@@ -42,7 +48,7 @@
                   @csrf
                   @method('delete')
                   <a href="/admin/edit/{{ $ticket->id }}" class="btn btn-sm btn-success"><i class="bi bi-pencil-square"></i></a>
-                  <button type="submit" class="btn btn-sm btn-danger d-inline" onclick="alert('Are you sure want to delete this ticket?')"><i class="bi bi-trash3"></i></button>
+                  <button type="submit" class="btn btn-sm btn-danger d-inline" onclick="confirm('Are you sure want to delete this ticket?')"><i class="bi bi-trash3"></i></button>
                 </form>
               </td>
             </tr>

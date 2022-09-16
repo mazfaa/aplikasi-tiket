@@ -11,6 +11,15 @@
 	      <div class="mb-3">
 	        <label for="exampleInputEmail1" class="form-label">Alamat</label>
 	        <input name="address" type="text" value="{{ $field->address }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+	      </div><div class="mb-3">
+	        <label for="exampleInputEmail1" class="form-label">Seat</label>
+	        <input name="seat" type="text" value="{{ $field->seat }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+	      </div><div class="mb-3">
+	        <label for="exampleInputEmail1" class="form-label">Gate</label>
+	        <input name="gate" type="text" value="{{ $field->gate }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+	      </div><div class="mb-3">
+	        <label for="exampleInputEmail1" class="form-label">Tema Konser</label>
+	        <input name="watching" type="text" value="{{ $field->watching }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 	      </div>
 	      <div class="mb-3">
 	        <label for="exampleInputEmail1" class="form-label">No. Telepon</label>
@@ -24,7 +33,7 @@
 	        <label for="exampleInputEmail1" class="form-label">Waktu</label>
 	        <input name="time" type="time" value="{{ $field->time }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 	      </div>
-	      <button type="submit" class="btn btn-success mt-2">Edit</button>
+	      <button type="submit" class="btn btn-success mt-2"><i class="bi bi-pencil-square"></i> Edit</button>
 	    </form>
 		@endforeach
 	</x-slot>
