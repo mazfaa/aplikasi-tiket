@@ -2,7 +2,7 @@
 	<x-slot name="content">
 		@if (session()->has('status'))
 	      <div class="alert alert-success alert-dismissible fade show" role="alert">
-	        Ticket Checked Successfully!
+	        Ticket Berhasil Check-in! Silahkan Masuk dan Selamat Menonton!
 	        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
